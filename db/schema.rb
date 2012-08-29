@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120827002032) do
+ActiveRecord::Schema.define(:version => 20120828205704) do
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -38,6 +38,13 @@ ActiveRecord::Schema.define(:version => 20120827002032) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "name"
+    t.string   "facebook_uid"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.string   "facebook_token"
+    t.datetime "facebook_token_expires"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

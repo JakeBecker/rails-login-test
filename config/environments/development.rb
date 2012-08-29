@@ -40,4 +40,7 @@ Myapp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  ENV['FACEBOOK_APP_ID'] ||= '331096950233985'
+  ENV['FACEBOOK_SECRET'] ||= '03bc749d2a4bfdbb8b3b9a7d55fdcfe0'
 end
