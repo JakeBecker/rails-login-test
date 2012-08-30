@@ -1,11 +1,12 @@
 %h2 Sign up
-= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+= simple_form_for(resource, :as => resource_name,
+    :url => registration_path(resource_name), validate: true, html: { id: 'user_new' }) do |f|
   = devise_error_messages!
-  = f.input :name
-  = f.input :email
-  = f.input :password
-  = f.input :password_confirmation
-  = f.input :facebook_token, :as => :hidden
-  = f.input :facebook_token_expires, :as => :hidden
+  = f.input :name, required: false
+  = f.input :email, required: false
+  = f.input :password, required: false
+  = f.input :password_confirmation, required: false
+  = f.input :facebook_token, as: :hidden, required: false
+  = f.input :facebook_token_expires, as: :hidden, required: false
   = f.submit 'Sign up'
 = render "devise/shared/links"

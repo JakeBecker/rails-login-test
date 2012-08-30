@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/bcardarella/client_side_validations.git
+  revision: 2a4d5f431378b15d741687c5fc6691b630736528
+  specs:
+    client_side_validations (3.2.0.beta.6)
+
+GIT
+  remote: https://github.com/dockyard/client_side_validations-simple_form.git
+  revision: dabae45bba4149047f2da6d6590fbc3d60485dba
+  specs:
+    client_side_validations-simple_form (2.0.0.beta.2)
+      client_side_validations (~> 3.2.0.beta.6)
+      simple_form (~> 2.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -202,6 +216,8 @@ DEPENDENCIES
   bootstrap-sass (>= 2.0.4.0)
   cancan (>= 1.6.8)
   capybara (>= 1.1.2)
+  client_side_validations!
+  client_side_validations-simple_form!
   coffee-filter
   coffee-rails (~> 3.2.1)
   devise (>= 2.1.2)

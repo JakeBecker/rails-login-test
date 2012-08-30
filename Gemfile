@@ -23,3 +23,5 @@ gem "simple_form", ">= 2.0.2"
 gem 'omniauth-facebook', '1.4.0'
 gem 'koala'
 gem 'coffee-filter'
+gem 'client_side_validations', :git => 'https://github.com/bcardarella/client_side_validations.git'
+gem 'client_side_validations-simple_form', :git => 'https://github.com/dockyard/client_side_validations-simple_form.git'
