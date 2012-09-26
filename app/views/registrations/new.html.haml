@@ -2,11 +2,11 @@
 = simple_form_for(resource, :as => resource_name,
     :url => registration_path(resource_name), validate: true, html: { id: 'user_new' }) do |f|
   = devise_error_messages!
-  = f.input :name, required: false
-  = f.input :email, required: false
-  = f.input :password, required: false
-  = f.input :password_confirmation, required: false
-  = f.input :facebook_token, as: :hidden, required: false
-  = f.input :facebook_token_expires, as: :hidden, required: false
+  = f.input :name, input_html: { validate: true }
+  = f.input :email, input_html: { validate: true }
+  = f.input :password, input_html: { validate: true }
+  = f.input :password_confirmation, input_html: { validate: true }
+  = f.input :facebook_token, as: :hidden, input_html: { validate: true }
+  = f.input :facebook_token_expires, as: :hidden, input_html: { validate: true }
   = f.submit 'Sign up'
 = render "devise/shared/links"
